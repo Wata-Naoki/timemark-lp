@@ -42,6 +42,9 @@
   .cta { text-align: center; padding: 24px 0 64px; }
   footer { border-top: 1px solid #2c2c2e; padding: 24px 0 40px; color: var(--sub); font-size: 13px; text-align: center; }
   footer a { margin: 0 8px; }
+  /* 「」で囲んだ言葉を途中で折り返さない */
+  .nw { white-space: nowrap; }
+  .feature h2 .nw { color: inherit; margin-right: 0; }
 </style>
 </head>
 <body>
@@ -62,10 +65,10 @@
     <section class="features">
       <div class="feature">
         <h2><span>01</span>すぐ入力</h2>
-        <p>「+5分」「+10分」「+30分」「+1時間」をタップするだけで時刻が入り、その時刻に通知します。</p>
+        <p><span class="nw">「+5分」</span><span class="nw">「+10分」</span><span class="nw">「+30分」</span><span class="nw">「+1時間」</span>をタップするだけで時刻が入り、その時刻に通知します。</p>
       </div>
       <div class="feature">
-        <h2><span>02</span>ロック画面で「あと何分」</h2>
+        <h2><span>02</span>ロック画面で<span class="nw">「あと何分」</span></h2>
         <p>次の予定と残り時間を、ロック画面とダイナミックアイランドに表示。アプリを開かずに確認できます。</p>
         <span class="plus">Timemark Plus</span>
       </div>

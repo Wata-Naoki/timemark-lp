@@ -25,3 +25,4 @@
 - [大事な会議を5分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/meeting/): 使い方の手順・動画・よくある質問
 - [電車の乗り過ごし防止に、降りる駅の1分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/train/): 使い方の手順・動画・よくある質問
 - [飛行機の搭乗時刻を忘れないタイマー](https://wata-naoki.github.io/timemark-lp/scenes/flight/): 使い方の手順・よくある質問
+- [待ち合わせに遅れないタイマー](https://wata-naoki.github.io/timemark-lp/scenes/meetup/): 使い方の手順・よくある質問

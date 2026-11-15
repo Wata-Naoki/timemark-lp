@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- このファイルは scripts/lp/build_scene_pages.py が作る。直接は変更しない -->
+<meta name="apple-itunes-app" content="app-id=6766044179">
+<title>大事な会議を忘れないリマインダー｜5分前に通知するTimemark</title>
+<meta name="description" content="大事な会議を忘れないよう、始まる数分前にiPhoneで通知。開始時刻を入れて「5分前」を選ぶだけで、作業に集中していても会議の前に気づけます。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大事な会議を忘れないリマインダー｜5分前に通知するTimemark">
+<meta property="og:description" content="大事な会議を忘れないよう、始まる数分前にiPhoneで通知。開始時刻を入れて「5分前」を選ぶだけで、作業に集中していても会議の前に気づけます。">
+<meta property="og:url" content="https://wata-naoki.github.io/timemark-lp/scenes/meeting/">
+<meta property="og:image" content="https://wata-naoki.github.io/timemark-lp/images/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@naodev_jp">
+<link rel="icon" href="../../images/icon.png">
+<link rel="canonical" href="https://wata-naoki.github.io/timemark-lp/scenes/meeting/">
+<meta name="robots" content="max-image-preview:large">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Timemark",
+     "item": "https://wata-naoki.github.io/timemark-lp/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "会議",
+     "item": "https://wata-naoki.github.io/timemark-lp/scenes/meeting/"
+    }
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "name": "大事な会議を忘れないリマインダー",
+   "description": "大事な会議を忘れないよう、始まる数分前にiPhoneで通知。開始時刻を入れて「5分前」を選ぶだけで、作業に集中していても会議の前に気づけます。",
+   "url": "https://wata-naoki.github.io/timemark-lp/scenes/meeting/",
+   "video": {
+    "@type": "VideoObject",
+    "name": "会議の5分前に通知する操作の動画",
+    "description": "開始時刻を入れて「5分前」を選ぶだけ。作業に集中していても、始まる前に気づけます。",
+    "thumbnailUrl": "https://wata-naoki.github.io/timemark-lp/videos/meeting.webp",
+    "contentUrl": "https://wata-naoki.github.io/timemark-lp/videos/meeting.mp4",
+    "uploadDate": "2026-11-14"
+   },
+   "tool": {
+    "@type": "HowToTool",
+    "name": "Timemark（iPhoneアプリ）"
+   },
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "「+30分」などで開始時刻を入れ、ラベルに「会議」と入力"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "「5分前」を選んで「追加する」をタップ"
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "5分前に「会議 まであと5分です」、開始時刻に「会議 の時間です」と通知"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "事前通知は無料で使えますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "事前通知（10分前・5分前・1分前）は、買い切りのTimemark Plusで使えます。開始時刻の通知は無料で使えます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "開始時刻を直接選べますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "時刻のピッカーで、開始時刻を選んで入れられます。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+  :root {
+    --bg: #111111; --surface: #1c1c1e; --text: #ffffff; --sub: #b8b8b8; --accent: #07b8d4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; line-height: 1.7; }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  /* 上部: トップページへの戻り先 */
+  .crumbs { padding: 16px 0 0; font-size: 13px; color: var(--sub); }
+  .crumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+  .crumbs li + li::before { content: "›"; margin-right: 8px; }
+  /* 冒頭: アイコン・場面の一言・ダウンロード */
+  .hero { padding: 48px 0 40px; text-align: center; }
+  .hero img { width: 80px; height: 80px; border-radius: 18px; }
+  .hero h1 { margin-top: 20px; font-size: clamp(26px, 5.5vw, 40px); font-weight: 800; line-height: 1.4; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p { margin-top: 16px; color: var(--sub); font-size: 17px; }
+  .store { display: inline-block; margin-top: 32px; padding: 16px 40px; border-radius: 999px; background: var(--text); color: var(--bg); font-weight: 700; font-size: 18px; text-decoration: none; }
+  .store:hover { opacity: .85; }
+  section > h2 { font-size: 24px; text-align: center; }
+  /* 使い方: 動画 ＋ 手順 */
+  .howto { padding: 24px 0 40px; }
+  .howto-body { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin-top: 24px; }
+  .howto video, .howto img { width: 220px; height: auto; border-radius: 24px; background: #000; }
+  .howto ol { flex: 1 1 300px; max-width: 480px; list-style: none; counter-reset: step; }
+  .howto li { counter-increment: step; position: relative; background: var(--surface); border-radius: 16px; padding: 16px 20px 16px 56px; margin-top: 12px; }
+  .howto li::before { content: counter(step); position: absolute; left: 18px; top: 14px; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 700; text-align: center; line-height: 26px; }
+  .plus { display: inline-block; margin-top: 12px; padding: 2px 12px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-size: 13px; }
+  /* 便利な理由 */
+  .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+  .point { background: var(--surface); border-radius: 20px; padding: 24px; }
+  .point h3 { font-size: 18px; }
+  .point p { margin-top: 8px; color: var(--sub); font-size: 15px; }
+  /* よくある質問 */
+  .faq { padding: 40px 0; }
+  .faq details { background: var(--surface); border-radius: 16px; padding: 16px 20px; margin-top: 12px; }
+  .faq summary { font-weight: 700; cursor: pointer; }
+  .faq p { margin-top: 8px; color: var(--sub); font-size: 15px; }
+  /* ほかの使い方 */
+  .others ul { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px; list-style: none; }
+  .others a { display: inline-block; padding: 10px 20px; border: 1px solid #3a3a3c; border-radius: 999px; text-decoration: none; }
+  .cta { text-align: center; padding: 40px 0 64px; }
+  footer { border-top: 1px solid #2c2c2e; padding: 24px 0 40px; color: var(--sub); font-size: 13px; text-align: center; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="crumbs" aria-label="現在の位置">
+      <ol>
+        <li><a href="../../">Timemark</a></li>
+        <li aria-current="page">会議</li>
+      </ol>
+    </nav>
+
+    <section class="hero">
+      <img src="../../images/icon.webp" width="80" height="80" alt="Timemark のアイコン">
+      <h1>大事な会議を、<br><em>忘れない</em>。</h1>
+      <p>開始時刻を入れて「5分前」を選ぶだけ。作業に集中していても、始まる前に気づけます。</p>
+      <a class="store" href="https://apps.apple.com/jp/app/id6766044179">App Store で入手（無料）</a>
+    </section>
+
+    <section class="howto" aria-labelledby="howto-title">
+      <h2 id="howto-title">使い方</h2>
+      <div class="howto-body">
+        <video src="../../videos/meeting.mp4" poster="../../videos/meeting.webp" width="360" height="780" autoplay muted loop playsinline aria-label="会議の5分前に通知する操作の動画"></video>
+        <ol>
+          <li>「+30分」などで開始時刻を入れ、ラベルに「会議」と入力</li>
+          <li>「5分前」を選んで「追加する」をタップ</li>
+          <li>5分前に「会議 まであと5分です」、開始時刻に「会議 の時間です」と通知</li>
+        </ol>
+      </div>
+    </section>
+
+    <section aria-labelledby="points-title">
+      <h2 id="points-title">Timemarkが便利な理由</h2>
+      <div class="points">
+        <div class="point">
+          <h3>作業に集中していても気づける</h3>
+          <p>マナーモードでもメッセージの通知と区別できるよう、通知を連続で鳴らします（1〜5回、設定で変更可）。</p>
+        </div>
+        <div class="point">
+          <h3>10分前・5分前・1分前に通知</h3>
+          <p>始まる前の事前通知で、資料の準備や移動の時間を見込めます。</p>
+          <span class="plus">Timemark Plus</span>
+        </div>
+        <div class="point">
+          <h3>カレンダーより手早く</h3>
+          <p>日付やタイトルの入力が不要で、時刻とラベルだけで入れられます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">よくある質問</h2>
+      <details>
+        <summary>事前通知は無料で使えますか？</summary>
+        <p>事前通知（10分前・5分前・1分前）は、買い切りのTimemark Plusで使えます。開始時刻の通知は無料で使えます。</p>
+      </details>
+      <details>
+        <summary>開始時刻を直接選べますか？</summary>
+        <p>時刻のピッカーで、開始時刻を選んで入れられます。</p>
+      </details>
+    </section>
+
+    <section class="others" aria-labelledby="others-title">
+      <h2 id="others-title">ほかの使い方</h2>
+      <ul>
+        <li><a href="../parking/">駐車場</a></li>
+        <li><a href="../cooking/">料理・家事</a></li>
+        <li><a href="../train/">電車</a></li>
+        <li><a href="../flight/">飛行機</a></li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <a class="store" href="https://apps.apple.com/jp/app/id6766044179">App Store で入手（無料）</a>
+    </section>
+  </main>
+  <footer>
+    <a href="https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67">サポート</a>
+    <a href="https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf">プライバシーポリシー</a>
+    <a href="https://x.com/naodev_jp">X</a>
+    <p>© 2026 Watanabe Naoki</p>
+  </footer>
+</body>
+</html>

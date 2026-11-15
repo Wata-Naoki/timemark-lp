@@ -5,7 +5,7 @@
 ## 概要
 
 - 「+5分」「+10分」「+30分」「+1時間」をタップするだけで、その時刻に通知する
-- 乗換の電車・コインパーキング・会議の5分前・料理の茹で時間などで使う
+- 電車で降りる駅の1分前・コインパーキング・大事な会議の5分前・料理の茹で時間などで使う
 - 無料で使える。買い切りのTimemark Plusで、タイマーの無制限の追加・事前通知（10分前・5分前・1分前）・ロック画面の残り時間表示・よく使う予定が使える
 - Apple Watchに対応（Watchから追加・削除もできる）
 
@@ -14,6 +14,14 @@
 - [App Store](https://apps.apple.com/jp/app/id6766044179): ダウンロード
 - [ランディングページ](https://wata-naoki.github.io/timemark-lp/): 使う場面の動画と機能の説明
 - [LPの全文](https://wata-naoki.github.io/timemark-lp/llms-full.txt): 使う場面・特長・よくある質問
-- [サポート](https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67): 問い合わせ
-- [プライバシーポリシー](https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf)
+- [サポート](https://wata-naoki.github.io/timemark-lp/support.html): 問い合わせ
+- [プライバシーポリシー](https://wata-naoki.github.io/timemark-lp/privacy.html)
 - [X](https://x.com/naodev_jp): 開発者
+
+## 使う場面ごとのページ
+
+- [コインパーキングの時間を通知](https://wata-naoki.github.io/timemark-lp/scenes/parking/): 使い方の手順・動画・よくある質問
+- [料理・洗濯のタイマーを複数同時に](https://wata-naoki.github.io/timemark-lp/scenes/cooking/): 使い方の手順・動画・よくある質問
+- [大事な会議を5分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/meeting/): 使い方の手順・動画・よくある質問
+- [電車の乗り過ごし防止に、降りる駅の1分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/train/): 使い方の手順・動画・よくある質問
+- [飛行機の搭乗時刻を忘れないタイマー](https://wata-naoki.github.io/timemark-lp/scenes/flight/): 使い方の手順・よくある質問

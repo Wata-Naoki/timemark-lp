@@ -6,11 +6,11 @@
 
 ## こんな時に
 
-### 乗換で「次の電車まであと何分」
+### 電車で降りる駅の1分前に通知
 
-- どんな時: 乗換の電車まで10分。ホームで待つ間も時間を忘れたくない
-- タップ: よく使う「乗り換え」→「+10分」→「5分前」→「追加する」
-- 起きること: 5分前と10分後に通知。残り時間は一覧とロック画面に表示
+- どんな時: スマホに集中していて、降りる駅を乗り過ごしそう
+- タップ: 降りる駅に着く時刻を「+10分」などで入れる→「1分前」→「追加する」
+- 起きること: 着く1分前に「あと1分」と通知。残り時間は一覧とロック画面に表示
 
 ### コインパーキングの時間を「1時間後」に通知
 
@@ -18,9 +18,9 @@
 - タップ: よく使う「駐車場」→「+1時間」→「追加する」
 - 起きること: 1時間後に通知。残り時間は一覧で確認
 
-### 会議の5分前に通知
+### 大事な会議を5分前に通知
 
-- どんな時: 次の会議を、始まる少し前に思い出したい
+- どんな時: 作業に集中していても、大事な会議を忘れたくない
 - タップ: よく使う「会議」→「+10分」→「5分前」→「追加する」
 - 起きること: 5分前に「会議 まであと5分です」と通知
 
@@ -65,12 +65,16 @@ Apple Watchに対応しています。手首で予定を確認でき、Watchか�
 
 ### どんな場面で使えますか？
 
-乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。
+降りる駅の1分前、コインパーキングの時間、大事な会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。
 
 ## リンク
 
 - [ランディングページ](https://wata-naoki.github.io/timemark-lp/)
 - [App Store で入手（無料）](https://apps.apple.com/jp/app/id6766044179)
-- [サポート](https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67)
-- [プライバシーポリシー](https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf)
+- [電車で降りる駅の1分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/train/)
+- [コインパーキングの時間を「1時間後」に通知](https://wata-naoki.github.io/timemark-lp/scenes/parking/)
+- [大事な会議を5分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/meeting/)
+- [パスタの茹で時間・洗濯の終わりを通知](https://wata-naoki.github.io/timemark-lp/scenes/cooking/)
+- [サポート](https://wata-naoki.github.io/timemark-lp/support.html)
+- [プライバシーポリシー](https://wata-naoki.github.io/timemark-lp/privacy.html)
 - [X](https://x.com/naodev_jp)

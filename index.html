@@ -6,7 +6,7 @@
 <!-- iPhoneのSafariで開いた場合に、ページ上部にストアへのバナーを表示 -->
 <meta name="apple-itunes-app" content="app-id=6766044179">
 <title>Timemark - 今から何分後タイマー</title>
-<meta name="description" content="「今から何分後」をワンタップで通知するiPhoneアプリ。乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間などを「+10分」「+1時間」ですぐに入れて、ロック画面やApple Watchで「あと何分」を確認できます。">
+<meta name="description" content="「今から何分後」をワンタップで通知するiPhoneアプリ。降りる駅の1分前、コインパーキングの時間、大事な会議の5分前、パスタの茹で時間などを「+10分」「+1時間」ですぐに入れて、ロック画面やApple Watchで「あと何分」を確認できます。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Timemark - 今から何分後タイマー">
 <meta property="og:description" content="「今から何分後」をワンタップで通知。ロック画面とApple Watchで「あと何分」を確認。">
@@ -98,7 +98,7 @@
    "name": "どんな場面で使えますか？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。"
+    "text": "降りる駅の1分前、コインパーキングの時間、大事な会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。"
    }
   }
  ]
@@ -170,20 +170,20 @@
       <h2 id="scenes-title">こんな時に</h2>
       <div class="scene-list">
         <div class="scene">
-          <video src="videos/train.mp4" poster="videos/train.webp" width="360" height="780" autoplay muted loop playsinline aria-label="乗換で「次の電車まであと何分」の操作の動画"></video>
+          <video src="videos/train.mp4" poster="videos/train.webp" width="360" height="780" autoplay muted loop playsinline aria-label="降りる駅の1分前に通知する操作の動画"></video>
           <div>
-            <h3>乗換で「次の電車まであと何分」</h3>
+            <h3><a href="scenes/train/">電車で降りる駅の1分前に通知</a></h3>
             <dl>
-              <dt>どんな時</dt><dd>乗換の電車まで10分。ホームで待つ間も時間を忘れたくない</dd>
-              <dt>タップ</dt><dd>よく使う「乗り換え」→「+10分」→「5分前」→「追加する」</dd>
-              <dt>起きること</dt><dd>5分前と10分後に通知。残り時間は一覧とロック画面に表示</dd>
+              <dt>どんな時</dt><dd>スマホに集中していて、降りる駅を乗り過ごしそう</dd>
+              <dt>タップ</dt><dd>降りる駅に着く時刻を「+10分」などで入れる→「1分前」→「追加する」</dd>
+              <dt>起きること</dt><dd>着く1分前に「あと1分」と通知。残り時間は一覧とロック画面に表示</dd>
             </dl>
           </div>
         </div>
         <div class="scene">
           <video src="videos/parking.mp4" poster="videos/parking.webp" width="360" height="780" autoplay muted loop playsinline aria-label="コインパーキングの時間を「1時間後」に通知の操作の動画"></video>
           <div>
-            <h3>コインパーキングの時間を「1時間後」に通知</h3>
+            <h3><a href="scenes/parking/">コインパーキングの時間を「1時間後」に通知</a></h3>
             <dl>
               <dt>どんな時</dt><dd>駐車場の料金が上がる前に車に戻りたい</dd>
               <dt>タップ</dt><dd>よく使う「駐車場」→「+1時間」→「追加する」</dd>
@@ -192,11 +192,11 @@
           </div>
         </div>
         <div class="scene">
-          <video src="videos/meeting.mp4" poster="videos/meeting.webp" width="360" height="780" autoplay muted loop playsinline aria-label="会議の5分前に通知の操作の動画"></video>
+          <video src="videos/meeting.mp4" poster="videos/meeting.webp" width="360" height="780" autoplay muted loop playsinline aria-label="大事な会議を5分前に通知する操作の動画"></video>
           <div>
-            <h3>会議の5分前に通知</h3>
+            <h3><a href="scenes/meeting/">大事な会議を5分前に通知</a></h3>
             <dl>
-              <dt>どんな時</dt><dd>次の会議を、始まる少し前に思い出したい</dd>
+              <dt>どんな時</dt><dd>作業に集中していても、大事な会議を忘れたくない</dd>
               <dt>タップ</dt><dd>よく使う「会議」→「+10分」→「5分前」→「追加する」</dd>
               <dt>起きること</dt><dd>5分前に「会議 まであと5分です」と通知</dd>
             </dl>
@@ -205,7 +205,7 @@
         <div class="scene">
           <video src="videos/cooking.mp4" poster="videos/cooking.webp" width="360" height="780" autoplay muted loop playsinline aria-label="パスタの茹で時間・洗濯の終わりを通知の操作の動画"></video>
           <div>
-            <h3>パスタの茹で時間・洗濯の終わりを通知</h3>
+            <h3><a href="scenes/cooking/">パスタの茹で時間・洗濯の終わりを通知</a></h3>
             <dl>
               <dt>どんな時</dt><dd>料理や洗濯の「何分後」を、手を止めずに入れたい</dd>
               <dt>タップ</dt><dd>よく使う「パスタ」→「+5分」→「追加する」</dd>
@@ -252,7 +252,7 @@
       </details>
       <details>
         <summary>どんな場面で使えますか？</summary>
-        <p>乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。</p>
+        <p>降りる駅の1分前、コインパーキングの時間、大事な会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。</p>
       </details>
     </section>
 
@@ -261,8 +261,8 @@
     </section>
   </main>
   <footer>
-    <a href="https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67">サポート</a>
-    <a href="https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf">プライバシーポリシー</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
     <a href="https://x.com/naodev_jp">X</a>
     <p>© 2026 Watanabe Naoki</p>
   </footer>

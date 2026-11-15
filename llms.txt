@@ -13,6 +13,7 @@
 
 - [App Store](https://apps.apple.com/jp/app/id6766044179): ダウンロード
 - [ランディングページ](https://wata-naoki.github.io/timemark-lp/): 使う場面の動画と機能の説明
+- [LPの全文](https://wata-naoki.github.io/timemark-lp/llms-full.txt): 使う場面・特長・よくある質問
 - [サポート](https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67): 問い合わせ
 - [プライバシーポリシー](https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf)
 - [X](https://x.com/naodev_jp): 開発者

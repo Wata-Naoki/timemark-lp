@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- iPhoneのSafariで開いた場合に、ページ上部にストアへのバナーを表示 -->
+<meta name="apple-itunes-app" content="app-id=6766044179">
 <title>Timemark - 今から何分後タイマー</title>
 <meta name="description" content="「今から何分後」をワンタップで通知するiPhoneアプリ。乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間などを「+10分」「+1時間」ですぐに入れて、ロック画面やApple Watchで「あと何分」を確認できます。">
 <meta property="og:type" content="website">
@@ -15,6 +17,8 @@
 <link rel="icon" href="images/icon.png">
 <link rel="canonical" href="https://wata-naoki.github.io/timemark-lp/">
 <link rel="alternate" type="text/plain" href="https://wata-naoki.github.io/timemark-lp/llms.txt" title="llms.txt">
+<link rel="alternate" type="text/plain" href="https://wata-naoki.github.io/timemark-lp/llms-full.txt" title="llms-full.txt">
+<meta name="robots" content="max-image-preview:large">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -28,9 +32,22 @@
  "url": "https://wata-naoki.github.io/timemark-lp/",
  "downloadUrl": "https://apps.apple.com/jp/app/id6766044179",
  "image": "https://wata-naoki.github.io/timemark-lp/images/icon.png",
+ "screenshot": [
+  "https://wata-naoki.github.io/timemark-lp/images/shot1.webp",
+  "https://wata-naoki.github.io/timemark-lp/images/shot2.webp",
+  "https://wata-naoki.github.io/timemark-lp/images/shot3.webp"
+ ],
+ "featureList": [
+  "「+5分」「+10分」「+30分」「+1時間」のワンタップで、今から何分後に通知",
+  "ロック画面とダイナミックアイランドに次の予定と残り時間を表示（Timemark Plus）",
+  "10分前・5分前・1分前の事前通知（Timemark Plus）",
+  "よく使う予定（乗り換え・駐車場・会議など）を登録して1タップで入力（Timemark Plus）",
+  "Apple Watchで予定を確認・追加・削除"
+ ],
  "author": {
   "@type": "Person",
-  "name": "Watanabe Naoki"
+  "name": "Watanabe Naoki",
+  "url": "https://x.com/naodev_jp"
  },
  "offers": {
   "@type": "Offer",
@@ -105,14 +122,14 @@
   .store:hover { opacity: .85; }
   /* スクリーンショット（狭い画面では横に流す） */
   .shots { display: flex; gap: 16px; overflow-x: auto; padding: 8px 0 24px; scroll-snap-type: x mandatory; }
-  .shots img { flex: 0 0 auto; width: min(280px, 70vw); border-radius: 24px; scroll-snap-align: center; }
+  .shots img { flex: 0 0 auto; width: min(280px, 70vw); height: auto; border-radius: 24px; scroll-snap-align: center; }
   /* 特長3つ */
   /* 使う場面: 動画 ＋「どんな時 → どこをタップ → 何が起きる」 */
   .scenes { padding: 40px 0 0; }
   .scenes > h2 { font-size: 24px; text-align: center; }
   .scene-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 24px; }
   .scene { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border-radius: 20px; padding: 20px; }
-  .scene video { flex: 0 0 auto; width: 120px; border-radius: 16px; background: #000; }
+  .scene video { flex: 0 0 auto; width: 120px; height: auto; border-radius: 16px; background: #000; }
   .scene h3 { font-size: 17px; line-height: 1.5; }
   .scene dl { margin-top: 8px; font-size: 14px; }
   .scene dt { color: var(--accent); font-size: 12px; margin-top: 6px; }
@@ -137,23 +154,23 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <img src="images/icon.png" alt="Timemark のアイコン">
+      <img src="images/icon.webp" width="112" height="112" alt="Timemark のアイコン">
       <h1>「今から何分後」を、<br><em>ワンタップ</em>で通知。</h1>
       <p>乗換・出発・会議の時刻を、すぐに入れて忘れない。</p>
       <a class="store" href="https://apps.apple.com/jp/app/id6766044179">App Store で入手（無料）</a>
     </section>
 
     <section class="shots" aria-label="スクリーンショット">
-      <img src="images/shot1.jpg" alt="ロック画面で「あと何分」を表示">
-      <img src="images/shot2.jpg" alt="今から+5分をワンタップで入力">
-      <img src="images/shot3.jpg" alt="Apple Watch でも確認・追加">
+      <img src="images/shot1.webp" width="460" height="1000" fetchpriority="high" alt="ロック画面で「あと何分」を表示">
+      <img src="images/shot2.webp" width="460" height="1000" alt="今から+5分をワンタップで入力">
+      <img src="images/shot3.webp" width="460" height="1000" alt="Apple Watch でも確認・追加">
     </section>
 
     <section class="scenes" aria-labelledby="scenes-title">
       <h2 id="scenes-title">こんな時に</h2>
       <div class="scene-list">
         <div class="scene">
-          <video src="videos/train.mp4" poster="videos/train.jpg" autoplay muted loop playsinline aria-label="乗換で「次の電車まであと何分」の操作の動画"></video>
+          <video src="videos/train.mp4" poster="videos/train.webp" width="360" height="780" autoplay muted loop playsinline aria-label="乗換で「次の電車まであと何分」の操作の動画"></video>
           <div>
             <h3>乗換で「次の電車まであと何分」</h3>
             <dl>
@@ -164,7 +181,7 @@
           </div>
         </div>
         <div class="scene">
-          <video src="videos/parking.mp4" poster="videos/parking.jpg" autoplay muted loop playsinline aria-label="コインパーキングの時間を「1時間後」に通知の操作の動画"></video>
+          <video src="videos/parking.mp4" poster="videos/parking.webp" width="360" height="780" autoplay muted loop playsinline aria-label="コインパーキングの時間を「1時間後」に通知の操作の動画"></video>
           <div>
             <h3>コインパーキングの時間を「1時間後」に通知</h3>
             <dl>
@@ -175,7 +192,7 @@
           </div>
         </div>
         <div class="scene">
-          <video src="videos/meeting.mp4" poster="videos/meeting.jpg" autoplay muted loop playsinline aria-label="会議の5分前に通知の操作の動画"></video>
+          <video src="videos/meeting.mp4" poster="videos/meeting.webp" width="360" height="780" autoplay muted loop playsinline aria-label="会議の5分前に通知の操作の動画"></video>
           <div>
             <h3>会議の5分前に通知</h3>
             <dl>
@@ -186,7 +203,7 @@
           </div>
         </div>
         <div class="scene">
-          <video src="videos/cooking.mp4" poster="videos/cooking.jpg" autoplay muted loop playsinline aria-label="パスタの茹で時間・洗濯の終わりを通知の操作の動画"></video>
+          <video src="videos/cooking.mp4" poster="videos/cooking.webp" width="360" height="780" autoplay muted loop playsinline aria-label="パスタの茹で時間・洗濯の終わりを通知の操作の動画"></video>
           <div>
             <h3>パスタの茹で時間・洗濯の終わりを通知</h3>
             <dl>

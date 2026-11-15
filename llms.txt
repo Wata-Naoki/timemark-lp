@@ -1,0 +1,18 @@
+# Timemark
+
+> 「今から何分後」をワンタップで通知するiPhoneアプリ。ロック画面とApple Watchで「あと何分」を確認できる。
+
+## 概要
+
+- 「+5分」「+10分」「+30分」「+1時間」をタップするだけで、その時刻に通知する
+- 乗換の電車・コインパーキング・会議の5分前・料理の茹で時間などで使う
+- 無料で使える。買い切りのTimemark Plusで、タイマーの無制限の追加・事前通知（10分前・5分前・1分前）・ロック画面の残り時間表示・よく使う予定が使える
+- Apple Watchに対応（Watchから追加・削除もできる）
+
+## リンク
+
+- [App Store](https://apps.apple.com/jp/app/id6766044179): ダウンロード
+- [ランディングページ](https://wata-naoki.github.io/timemark-lp/): 使う場面の動画と機能の説明
+- [サポート](https://different-plum-74c.notion.site/Timemark-34d08638772f813683adc6a074dd4b67): 問い合わせ
+- [プライバシーポリシー](https://different-plum-74c.notion.site/Timemark-34808638772f8011b7c4c3517ea4e6cf)
+- [X](https://x.com/naodev_jp): 開発者

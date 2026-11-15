@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wata-naoki.github.io/timemark-lp/sitemap.xml

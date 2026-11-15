@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Timemark - 今から何分後タイマー</title>
-<meta name="description" content="「今から何分後」をワンタップで通知。乗換・出発の時刻をすぐに入れて、ロック画面やApple Watchで「あと何分」を確認できるiPhoneアプリです。">
+<meta name="description" content="「今から何分後」をワンタップで通知するiPhoneアプリ。乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間などを「+10分」「+1時間」ですぐに入れて、ロック画面やApple Watchで「あと何分」を確認できます。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Timemark - 今から何分後タイマー">
 <meta property="og:description" content="「今から何分後」をワンタップで通知。ロック画面とApple Watchで「あと何分」を確認。">
@@ -13,6 +13,80 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@naodev_jp">
 <link rel="icon" href="images/icon.png">
+<link rel="canonical" href="https://wata-naoki.github.io/timemark-lp/">
+<link rel="alternate" type="text/plain" href="https://wata-naoki.github.io/timemark-lp/llms.txt" title="llms.txt">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Timemark",
+ "alternateName": "Timemark - 今から何分後タイマー",
+ "applicationCategory": "UtilitiesApplication",
+ "operatingSystem": "iOS",
+ "inLanguage": "ja",
+ "description": "「今から何分後」をワンタップで通知するiPhoneアプリ。ロック画面とApple Watchで「あと何分」を確認できます。",
+ "url": "https://wata-naoki.github.io/timemark-lp/",
+ "downloadUrl": "https://apps.apple.com/jp/app/id6766044179",
+ "image": "https://wata-naoki.github.io/timemark-lp/images/icon.png",
+ "author": {
+  "@type": "Person",
+  "name": "Watanabe Naoki"
+ },
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "JPY"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Timemarkとは何ですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "「今から何分後」に特化した、iPhoneの時刻通知アプリです。「+5分」「+10分」「+30分」「+1時間」をタップするだけで、その時刻に通知します。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "無料で使えますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "無料で使えます。タイマーの無制限の追加、10分前・5分前・1分前の事前通知、ロック画面の残り時間表示、よく使う予定は、買い切りのTimemark Plusで使えます。一度購入すれば追加の支払いはありません。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "ロック画面で残り時間を確認できますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Timemark Plusで、次の予定と残り時間をロック画面とダイナミックアイランドに表示できます。アプリを開かずに確認できます。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Apple Watchで使えますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Apple Watchに対応しています。手首で予定を確認でき、Watchから追加・削除もできます。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "どんな場面で使えますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。"
+   }
+  }
+ ]
+}
+</script>
 <style>
   :root {
     --bg: #111111; --surface: #1c1c1e; --text: #ffffff; --sub: #b8b8b8; --accent: #07b8d4;
@@ -33,18 +107,31 @@
   .shots { display: flex; gap: 16px; overflow-x: auto; padding: 8px 0 24px; scroll-snap-type: x mandatory; }
   .shots img { flex: 0 0 auto; width: min(280px, 70vw); border-radius: 24px; scroll-snap-align: center; }
   /* 特長3つ */
+  /* 使う場面: 動画 ＋「どんな時 → どこをタップ → 何が起きる」 */
+  .scenes { padding: 40px 0 0; }
+  .scenes > h2 { font-size: 24px; text-align: center; }
+  .scene-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 24px; }
+  .scene { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border-radius: 20px; padding: 20px; }
+  .scene video { flex: 0 0 auto; width: 120px; border-radius: 16px; background: #000; }
+  .scene h3 { font-size: 17px; line-height: 1.5; }
+  .scene dl { margin-top: 8px; font-size: 14px; }
+  .scene dt { color: var(--accent); font-size: 12px; margin-top: 6px; }
+  .scene dd { color: var(--sub); }
   .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; padding: 40px 0; }
   .feature { background: var(--surface); border-radius: 20px; padding: 28px 24px; }
   .feature h2 { font-size: 20px; }
   .feature h2 span { color: var(--accent); margin-right: 8px; }
   .feature p { margin-top: 8px; color: var(--sub); font-size: 15px; }
   .plus { display: inline-block; margin-top: 12px; padding: 2px 12px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-size: 13px; }
+  /* よくある質問 */
+  .faq { padding: 0 0 40px; }
+  .faq > h2 { font-size: 24px; text-align: center; }
+  .faq details { background: var(--surface); border-radius: 16px; padding: 16px 20px; margin-top: 12px; }
+  .faq summary { font-weight: 700; cursor: pointer; }
+  .faq p { margin-top: 8px; color: var(--sub); font-size: 15px; }
   .cta { text-align: center; padding: 24px 0 64px; }
   footer { border-top: 1px solid #2c2c2e; padding: 24px 0 40px; color: var(--sub); font-size: 13px; text-align: center; }
   footer a { margin: 0 8px; }
-  /* 「」で囲んだ言葉を途中で折り返さない */
-  .nw { white-space: nowrap; }
-  .feature h2 .nw { color: inherit; margin-right: 0; }
 </style>
 </head>
 <body>
@@ -62,13 +149,63 @@
       <img src="images/shot3.jpg" alt="Apple Watch でも確認・追加">
     </section>
 
+    <section class="scenes" aria-labelledby="scenes-title">
+      <h2 id="scenes-title">こんな時に</h2>
+      <div class="scene-list">
+        <div class="scene">
+          <video src="videos/train.mp4" poster="videos/train.jpg" autoplay muted loop playsinline aria-label="乗換で「次の電車まであと何分」の操作の動画"></video>
+          <div>
+            <h3>乗換で「次の電車まであと何分」</h3>
+            <dl>
+              <dt>どんな時</dt><dd>乗換の電車まで10分。ホームで待つ間も時間を忘れたくない</dd>
+              <dt>タップ</dt><dd>よく使う「乗り換え」→「+10分」→「5分前」→「追加する」</dd>
+              <dt>起きること</dt><dd>5分前と10分後に通知。残り時間は一覧とロック画面に表示</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="scene">
+          <video src="videos/parking.mp4" poster="videos/parking.jpg" autoplay muted loop playsinline aria-label="コインパーキングの時間を「1時間後」に通知の操作の動画"></video>
+          <div>
+            <h3>コインパーキングの時間を「1時間後」に通知</h3>
+            <dl>
+              <dt>どんな時</dt><dd>駐車場の料金が上がる前に車に戻りたい</dd>
+              <dt>タップ</dt><dd>よく使う「駐車場」→「+1時間」→「追加する」</dd>
+              <dt>起きること</dt><dd>1時間後に通知。残り時間は一覧で確認</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="scene">
+          <video src="videos/meeting.mp4" poster="videos/meeting.jpg" autoplay muted loop playsinline aria-label="会議の5分前に通知の操作の動画"></video>
+          <div>
+            <h3>会議の5分前に通知</h3>
+            <dl>
+              <dt>どんな時</dt><dd>次の会議を、始まる少し前に思い出したい</dd>
+              <dt>タップ</dt><dd>よく使う「会議」→「+10分」→「5分前」→「追加する」</dd>
+              <dt>起きること</dt><dd>5分前に「会議 まであと5分です」と通知</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="scene">
+          <video src="videos/cooking.mp4" poster="videos/cooking.jpg" autoplay muted loop playsinline aria-label="パスタの茹で時間・洗濯の終わりを通知の操作の動画"></video>
+          <div>
+            <h3>パスタの茹で時間・洗濯の終わりを通知</h3>
+            <dl>
+              <dt>どんな時</dt><dd>料理や洗濯の「何分後」を、手を止めずに入れたい</dd>
+              <dt>タップ</dt><dd>よく使う「パスタ」→「+5分」→「追加する」</dd>
+              <dt>起きること</dt><dd>時刻になったら通知。Apple Watchでも残り時間を確認</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="features">
       <div class="feature">
         <h2><span>01</span>すぐ入力</h2>
-        <p><span class="nw">「+5分」</span><span class="nw">「+10分」</span><span class="nw">「+30分」</span><span class="nw">「+1時間」</span>をタップするだけで時刻が入り、その時刻に通知します。</p>
+        <p>「+5分」「+10分」「+30分」「+1時間」をタップするだけで時刻が入り、その時刻に通知します。</p>
       </div>
       <div class="feature">
-        <h2><span>02</span>ロック画面で<span class="nw">「あと何分」</span></h2>
+        <h2><span>02</span>ロック画面で「あと何分」</h2>
         <p>次の予定と残り時間を、ロック画面とダイナミックアイランドに表示。アプリを開かずに確認できます。</p>
         <span class="plus">Timemark Plus</span>
       </div>
@@ -76,6 +213,30 @@
         <h2><span>03</span>Apple Watch 対応</h2>
         <p>手首で予定を確認できます。Watch から追加・削除もできます。</p>
       </div>
+    </section>
+
+    <section class="faq">
+      <h2>よくある質問</h2>
+      <details>
+        <summary>Timemarkとは何ですか？</summary>
+        <p>「今から何分後」に特化した、iPhoneの時刻通知アプリです。「+5分」「+10分」「+30分」「+1時間」をタップするだけで、その時刻に通知します。</p>
+      </details>
+      <details>
+        <summary>無料で使えますか？</summary>
+        <p>無料で使えます。タイマーの無制限の追加、10分前・5分前・1分前の事前通知、ロック画面の残り時間表示、よく使う予定は、買い切りのTimemark Plusで使えます。一度購入すれば追加の支払いはありません。</p>
+      </details>
+      <details>
+        <summary>ロック画面で残り時間を確認できますか？</summary>
+        <p>Timemark Plusで、次の予定と残り時間をロック画面とダイナミックアイランドに表示できます。アプリを開かずに確認できます。</p>
+      </details>
+      <details>
+        <summary>Apple Watchで使えますか？</summary>
+        <p>Apple Watchに対応しています。手首で予定を確認でき、Watchから追加・削除もできます。</p>
+      </details>
+      <details>
+        <summary>どんな場面で使えますか？</summary>
+        <p>乗換の電車、コインパーキングの時間、会議の5分前、パスタの茹で時間や洗濯の終わりなど、「何分後」を手早く通知したい場面で使えます。</p>
+      </details>
     </section>
 
     <section class="cta">

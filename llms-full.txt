@@ -75,6 +75,7 @@ Apple Watchに対応しています。手首で予定を確認でき、Watchか�
 - [コインパーキングの時間を「1時間後」に通知](https://wata-naoki.github.io/timemark-lp/scenes/parking/)
 - [大事な会議を5分前に通知](https://wata-naoki.github.io/timemark-lp/scenes/meeting/)
 - [パスタの茹で時間・洗濯の終わりを通知](https://wata-naoki.github.io/timemark-lp/scenes/cooking/)
+- [English](https://wata-naoki.github.io/timemark-lp/en/)
 - [サポート](https://wata-naoki.github.io/timemark-lp/support.html)
 - [プライバシーポリシー](https://wata-naoki.github.io/timemark-lp/privacy.html)
 - [X](https://x.com/naodev_jp)

@@ -9,12 +9,24 @@
 - 無料で使える。買い切りのTimemark Plusで、タイマーの無制限の追加・事前通知（10分前・5分前・1分前）・ロック画面の残り時間表示・よく使う予定が使える
 - Apple Watchに対応（Watchから追加・削除もできる）
 
+## English summary
+
+- Timemark is an iPhone app that alerts you at a time set "from now": tap +5m, +10m, +30m or +1h and get notified when the time comes
+- Typical uses: getting off a train, parking meters, meetings, cooking and laundry timers
+- Free to use. Timemark Plus (one-time purchase) adds unlimited timers, early alerts (10, 5 and 1 minute before), time left on the Lock Screen, and favorite alerts
+- Works with Apple Watch (add and delete from the watch); the app is available in English and Japanese
+- App Store: https://apps.apple.com/us/app/id6766044179
+- Landing page: https://wata-naoki.github.io/timemark-lp/en/
+
 ## リンク
 
 - [App Store](https://apps.apple.com/jp/app/id6766044179): ダウンロード
 - [ランディングページ](https://wata-naoki.github.io/timemark-lp/): 使う場面の動画と機能の説明
 - [LPの全文](https://wata-naoki.github.io/timemark-lp/llms-full.txt): 使う場面・特長・よくある質問
 - [ランディングページ（英語）](https://wata-naoki.github.io/timemark-lp/en/): English landing page
+- [Parking meter timer (English)](https://wata-naoki.github.io/timemark-lp/en/scenes/parking/): how to set an alert before a parking meter expires
+- [Alert before your train stop (English)](https://wata-naoki.github.io/timemark-lp/en/scenes/train/): how to get alerted 1 minute before arrival
+- [Kitchen and laundry timers (English)](https://wata-naoki.github.io/timemark-lp/en/scenes/cooking/): how to run several named timers at once
 - [サポート](https://wata-naoki.github.io/timemark-lp/support.html): 問い合わせ
 - [プライバシーポリシー](https://wata-naoki.github.io/timemark-lp/privacy.html)
 - [X](https://x.com/naodev_jp): 開発者
